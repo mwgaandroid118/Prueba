@@ -1,0 +1,104 @@
+body{
+    margin: 0cm;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.cover {
+    height: 400px;
+    background-image: url(https://cdn.glitch.com/385b8b6f-8705-4790-9107-7453da3da624%2Fzero.jpg?v=1615868851035);
+    color: white;
+    background-size: cover;
+    background-position:center ;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+}
+
+.cover2 {
+    height: 400px;
+    background-image: url(https://cdn.glitch.com/385b8b6f-8705-4790-9107-7453da3da624%2Fanime-waifus-verano-summer-2020.jpg?v=1615868707440);
+    color: white;
+    background-size: cover;
+    background-position:center ;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+}
+
+.cover-small{
+    height: 200px;
+}
+
+.card-title{
+    min-height: 3rem;
+}
+
+.card-text{
+    min-height: 7rem;
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    margin:0 auto;
+}
+
+.waifus, .slider{
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contenedor, .slider-container{
+    display: flex;
+}
+
+.contenedor .card{
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.imagencontenedor{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.slider{
+    overflow-x: hidden;
+}
+.slider-container{
+    transform:translateX(0);
+    animation: ani 10s infinite;
+}
+
+@keyframes ani{
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    100%{
+    }
+}
